@@ -126,7 +126,7 @@ nav a:hover {
 }
 /* Hero Section */
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(184, 180, 180, 0.5), rgba(172, 169, 169, 0.5)),
     url("images/cherrydeck-rMILC1PIwM0-unsplash.jpg");
   background-position: center;
   background-size: cover;
