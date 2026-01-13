@@ -18,7 +18,6 @@ html{
 /* Header */
 header {
   background: white;
-  padding: 1.5rem 5%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -34,10 +33,8 @@ header {
   gap: 10px;
 }
 
-.logo p {
-  color: #0066a1;
-  font-size: 2rem;
-  font-weight: bold;
+.logo img {
+ width: 150px;
 }
 
 /* Navigation */
@@ -48,7 +45,7 @@ nav {
 }
 
 nav a {
-  color: #0066a1;
+  color:#061268 ;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 900;
@@ -57,11 +54,11 @@ nav a {
 
 nav a:hover {
   opacity: 0.8;
-  color: #0066a1;
+  color: #c3090a;
 }
 
 .cta-button {
-  background: #0066a1;
+  background:#c3090a ;
   color: white !important;
   padding: 0.8rem 1.5rem;
   border-radius: 25px;
@@ -86,7 +83,7 @@ nav a:hover {
 .hamburger span {
   width: 25px;
   height: 3px;
-  background: #0066a1;
+  background: #061268;
   transition: 0.3s;
 }
 
@@ -108,7 +105,7 @@ nav a:hover {
   height: calc(100vh - 78px);
   min-height: 600px;
   overflow: hidden;
-  background: linear-gradient(135deg, #005a8d 0%, #003d5c 100%);
+  background: linear-gradient(135deg, #061268 0%, #07012b 100%);
   display: flex;
   align-items: center;
 }
@@ -129,7 +126,7 @@ nav a:hover {
 
 h1 {
   font-size: 3rem;
-  color: #7ec8e3;
+  color: #b4e0f0;
   font-weight: 900;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -169,14 +166,14 @@ h1 {
 }
 
 .btn-primary {
-  background: #005a8d;
+  background: #c3090a;
   color: white;
   padding: 15px 35px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s;
-  border: 2px solid #005a8d;
+  border: none;
 }
 
 .btn-primary:hover {
@@ -185,8 +182,8 @@ h1 {
 }
 
 .btn-secondary {
-  background: #7ec8e3;
-  color: #003d5c;
+  background: #061268;
+  color: #ffffff;
   padding: 15px 35px;
   border-radius: 30px;
   text-decoration: none;
@@ -195,7 +192,7 @@ h1 {
 }
 
 .btn-secondary:hover {
-  background: #6bb8d3;
+  background:#c3090a ;
 }
 
 .hero-image {
@@ -220,7 +217,7 @@ h1 {
 @media (max-width: 968px) {
   nav {
     position: fixed;
-    top: 80px;
+    top: 129px;
     right: -100%;
     width: 70%;
     height: calc(100vh - 80px);
@@ -301,10 +298,11 @@ h1 {
 .container  .text-services h1{
   font-size: 3rem;
   text-align: center;
+  color:#c3090a ;
 }
 
 .container  .text-services h1 span{
-  color: #003d5c;
+  color: #061268;
 }
 
 .container .text-services p{
@@ -332,7 +330,7 @@ h1 {
 }
 
 .card:hover {
-  background-color: #0066cc;
+  background-color: #061268;
   transform: scale(1.02);
   box-shadow: 0 12px 30px rgba(0, 102, 204, 0.3);
 }
