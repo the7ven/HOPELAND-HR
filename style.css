@@ -45,6 +45,7 @@ nav {
 }
 
 nav a {
+  text-transform: uppercase;
   color:#061268 ;
   text-decoration: none;
   font-size: 1rem;
@@ -56,6 +57,7 @@ nav a:hover {
   opacity: 0.8;
   color: #c3090a;
 }
+
 
 .cta-button {
   background:#c3090a ;
@@ -342,7 +344,7 @@ h1 {
 }
 
 .card h3 {
-  color: #1a1a1a;
+  color:#061268 ;
   font-size: 1.5em;
   margin-bottom: 20px;
   font-weight: 600;
@@ -368,7 +370,7 @@ h1 {
 }
 
 .learn-more {
-  color: #00bcd4;
+  color: #c3090a;
   font-weight: 500;
   text-decoration: none;
   display: inline-flex;
@@ -463,23 +465,11 @@ h1 {
       position: relative;
       width: 100%;
       min-height: 550px;
-      background: linear-gradient(135deg, #5b8db8 0%, #2c5f8d 50%, #1a4060 100%);
+      background: linear-gradient(135deg, #061268 0%, #061268 50%, #061268 100%);
       overflow: hidden;
     }
 
-    /* Forme ondulée supérieure */
-    .section-help::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 150px;
-      background: linear-gradient(to bottom, rgba(139, 169, 195, 0.4), transparent);
-      clip-path: ellipse(100% 100% at 50% 100%);
-    }
-
-    /* Forme ondulée inférieure */
+   
   
 
     .help-container {
@@ -780,7 +770,7 @@ h1 {
 }
 
 .values-header h2 {
-  color: #29b6f6;
+  color: #061268;
   font-size: 2rem;
   margin-bottom: 10px;
 }
@@ -825,7 +815,7 @@ h1 {
 }
 
 .value-content h3 {
-  color: #1a1a1a;
+  color: #c3090a;
   margin-bottom: 10px;
   font-size: 1.2rem;
 }
@@ -917,7 +907,7 @@ textarea.form-input {
 
 /* Footer */
 .footer {
-  background: #0d1b2a;
+  background: #061268;
   color: white;
   padding: 60px 20px 30px;
 }
@@ -931,7 +921,7 @@ textarea.form-input {
 }
 
 .footer-section h3 {
-  color: #29b6f6;
+  color: #c3090a;
   margin-bottom: 20px;
   font-size: 1.2rem;
 }
@@ -995,7 +985,7 @@ textarea.form-input {
 }
 
 .cta-btn {
-  background: #29b6f6;
+  background: #061268;
   color: white;
   padding: 18px 50px;
   border-radius: 50px;
@@ -1012,6 +1002,10 @@ textarea.form-input {
   background: #039be5;
   transform: translateY(-3px);
   box-shadow: 0 15px 40px rgba(41, 182, 246, 0.5);
+}
+
+.cta-content span{
+  color:#c3090a ;
 }
 
 /* Responsive */

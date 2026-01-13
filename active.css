@@ -1,0 +1,24 @@
+/* ... vos autres styles ... */
+
+/* Style pour le lien actif */
+#nav a.active {
+    color: #c3090a;
+    font-weight: 600;
+    position: relative;
+}
+
+#nav a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color:#c3090a ;
+    border-radius: 2px;
+}
+
+#nav a {
+    position: relative;
+    transition: color 0.3s ease;
+}
