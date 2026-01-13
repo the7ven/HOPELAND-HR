@@ -11,7 +11,7 @@ body {
   overflow-x: hidden;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -34,7 +34,7 @@ header {
 }
 
 .logo img {
- width: 150px;
+  width: 150px;
 }
 
 /* Navigation */
@@ -45,7 +45,7 @@ nav {
 }
 
 nav a {
-  color:#061268 ;
+  color: #061268;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 900;
@@ -59,7 +59,7 @@ nav a:hover {
 }
 
 .cta-button {
-  background:#c3090a ;
+  background: #c3090a;
   color: white !important;
   padding: 0.8rem 1.5rem;
   border-radius: 25px;
@@ -100,7 +100,6 @@ nav a:hover {
   transform: rotate(-45deg) translate(7px, -7px);
 }
 
-
 /* Responsive */
 @media (max-width: 968px) {
   nav {
@@ -127,7 +126,8 @@ nav a:hover {
 }
 /* Hero Section */
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("images/cherrydeck-rMILC1PIwM0-unsplash.jpg") ;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/cherrydeck-rMILC1PIwM0-unsplash.jpg");
   background-position: center;
   background-size: cover;
   min-height: 40vh;
@@ -135,11 +135,8 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 30px;
-  border-radius:0 0 50% 50% ;
+ 
 }
-
-
 
 .hero h1 {
   font-size: 3rem;
@@ -151,12 +148,268 @@ nav a:hover {
   color: #c3090a;
 }
 
+/*SERVICES INTRO*/
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Section Introduction */
+.services-intro {
+  background: #061268;
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.services-intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+  opacity: 0.3;
+}
+
+.services-intro .container {
+  position: relative;
+  z-index: 1;
+}
+
+.services-intro h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.services-intro p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Section Statistiques */
+.stats-section {
+  background: white;
+  padding: 5rem 2rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(6, 18, 104, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+ 
+}
+
+.stat-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(195, 9, 10, 0.15);
+}
+
+.stat-item h3 {
+  color: #c3090a;
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+  color: #061268;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Section Pourquoi nous choisir */
+.why-choose-us {
+  background: #f8f9fa;
+  padding: 5rem 2rem;
+}
+
+.why-choose-us h2 {
+  text-align: center;
+  color: #061268;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.why-choose-us h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: #c3090a;
+  border-radius: 2px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.feature-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(195, 9, 10, 0.05);
+  transition: left 0.5s;
+}
+
+.feature-card:hover::before {
+  left: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 15px 40px rgba(195, 9, 10, 0.2);
+}
+
+.feature-card .icon {
+  font-size: 3.5rem;
+  color: #c3090a;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover .icon {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.feature-card h3 {
+  color: #061268;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.feature-card p {
+  color: #666;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* Section Divider */
+.section-divider {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: white;
+}
+
+.section-divider h2 {
+  color: #061268;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.section-divider .subtitle {
+  color: #c3090a;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services-intro h2 {
+    font-size: 2rem;
+  }
+
+  .services-intro p {
+    font-size: 1rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .stat-item h3 {
+    font-size: 2.5rem;
+  }
+
+  .stat-item p {
+    font-size: 0.9rem;
+  }
+
+  .why-choose-us h2,
+  .section-divider h2 {
+    font-size: 1.8rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Service Section */
 .service-section {
   padding: 4rem 2rem;
 }
 
-.container{
+.container {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -220,7 +473,6 @@ nav a:hover {
   font-weight: bold;
 }
 
-
 .btn-primary {
   background: #c3090a;
   color: white;
@@ -240,7 +492,7 @@ nav a:hover {
 /* Footer */
 /* Footer */
 .footer {
-  background:#061268 ;
+  background: #061268;
   color: white;
   padding: 60px 20px 30px;
 }
@@ -286,8 +538,6 @@ nav a:hover {
 
 /* Responsive */
 @media (max-width: 768px) {
-  
-
   .hero h1 {
     font-size: 2rem;
   }
