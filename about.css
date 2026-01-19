@@ -48,7 +48,7 @@ nav a {
   text-transform: uppercase;
   color:#061268 ;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: .8rem;
   font-weight: 900;
   transition: color 0.3s;
 }
@@ -65,7 +65,7 @@ nav a:hover {
   border-radius: 25px;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   transition: background 0.3s;
 }
 
